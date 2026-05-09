@@ -3,94 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Portfolio website of Atul Pratap Singh - BCA student and aspiring full stack developer.">
+    <title>Atul Pratap Singh | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./images/atul.jpeg"/>
+    <link rel="icon" href="./images/atul.jpeg">
 </head>
 <body>
+    <main class="container">
+        <!-- HERO SECTION -->
+        <header class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">BCA Student • Aspiring Full Stack Developer</p>
+                <h1>Hello, I'm <span>Atul Pratap Singh</span> 👋</h1>
+                <p class="hero-text">
+                    I am passionate about web development, Python, and MERN Stack.
+                    I enjoy building clean, responsive, and user-friendly web applications.
+                </p>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="about">
-            <h1>Hello, I'm Atul 👋</h1>
-            <p>
-                I am a BCA student passionate about full stack development.
-                I work with Python and MERN Stack and enjoy building clean,
-                scalable web applications.
-            </p>
-        </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="mailto:atulpratap7795@gmail.com" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
 
-        <div class="profile">
-            <img src="./images/atul.jpeg" alt="Atul Image">
-            <h2>Atul Pratap Singh</h2>
-            <span>BCA Student | Full stack Developer</span>
-        </div>
-    </header>
+            <div class="profile-card">
+                <div class="profile-img-wrap">
+                    <img src="./images/atul.jpeg" alt="Atul Pratap Singh profile photo">
+                </div>
+                <h2>Atul Pratap Singh</h2>
+                <p>BCA Student | Full Stack Developer</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/atulpratapsingh82/" target="_blank" aria-label="Instagram">
+                        <img src="./images/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/atul-pratap-singh-11855333b/" target="_blank" aria-label="LinkedIn">
+                        <img src="./images/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Atul-Pratap-Singh90" target="_blank" aria-label="GitHub">
+                        <img src="./images/github.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </header>
 
-    <!-- EDUCATION -->
-    <section class="card">
-        <h2>🎓 Education</h2>
-        <ul>
-            <li>BCA</li>
-            <li>MCA</li>
-        </ul>
-    </section>
+        <!-- EDUCATION -->
+        <section class="section-card">
+            <div class="section-heading">
+                <p>My Learning</p>
+                <h2>🎓 Education</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>BCA</h3>
+                    <p>Bachelor of Computer Applications</p>
+                </div>
+                <div class="info-box">
+                    <h3>MCA</h3>
+                    <p>Master of Computer Applications</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- SKILLS -->
-    <section class="card">
-        <h2>💻 Skills</h2>
-        <ul class="skills">
-            <li>Python</li>
-            <li>MERN Stack</li>
-            <li>Backend Development</li>
-            <li>Java</li>
-            <li>C++</li>
-        </ul>
-    </section>
+        <!-- SKILLS -->
+        <section class="section-card">
+            <div class="section-heading">
+                <p>What I Know</p>
+                <h2>💻 Skills</h2>
+            </div>
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>MERN Stack</li>
+                <li>Backend Development</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
 
-    <!-- ACHIEVEMENTS -->
-    <section class="card">
-        <h2>🏆 Achievements</h2>
-        <p>
-            Git certificate by GeeksforGeeks –
-            <a href="https://www.geeksforgeeks.org/certificate/41bbf9aa0b004e57460da2bb986e228d" target="_blank">
-                <img src="data:image/png;base64,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" alt="" height="20px" width="20px">View Certificate
-               
-            </a>
-        </p>
-        <p>
-            HTML certificate by LetsUpgrade –
-            <a href="https://verify.letsupgrade.in/certificate/LUEHTMLJUL1252716" target="_blank">
-                <img src="data:image/jpeg;base64,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" alt="" height="20px" width="20px">
-                View Certificate
-            </a>
-        </p>
-    </section>
+        <!-- PROJECTS -->
+        <section class="section-card" id="projects">
+            <div class="section-heading">
+                <p>My Work</p>
+                <h2>🚀 Projects</h2>
+            </div>
 
-    <!-- HOBBIES -->
-    <section class="card">
-        <h2>🎯 Hobbies</h2>
-        <ul>
-            <li>Playing Chess</li>
-            <li>Adventure & Travel</li>
-        </ul>
-    </section>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-icon">📚</span>
+                        <span class="project-tag">Static Website</span>
+                    </div>
+                    <h3>CS Notes Gallery</h3>
+                    <p>
+                        A notes sharing platform for computer science students where users can
+                        access study materials and notes with a clean and responsive interface.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Atul-Pratap-Singh90" target="_blank" class="btn code-btn">Source Code</a>
+                        <a href="https://csnotesgallery.atulpratapsingh.co.in" target="_blank" class="btn live-btn">Live Preview</a>
+                    </div>
+                </article>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <h2>📞 Contact</h2>
-        <p>Email: <a href="mailto:atulpratap7795@gmail.com">atulpratap7795@gmail.com</a></p>
-        <p>Phone: 9045720692</p>
-        
-        <a href="https://www.instagram.com/atulpratapsingh82/" target="_blank">
-            <img src="./images/instagram.png" alt="" height="30px"></a>
+                <!-- <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-icon">👨‍💻</span>
+                        <span class="project-tag">Portfolio</span>
+                    </div>
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A personal portfolio website showcasing my skills, education,
+                        achievements, and projects using a modern responsive layout.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Atul-Pratap-Singh90" target="_blank" class="btn code-btn">Source Code</a>
+                        <a href="https://atulpratapsingh.co.in" target="_blank" class="btn live-btn">Live Preview</a>
+                    </div>
+                </article>
 
-            <a href="https://www.linkedin.com/in/atul-pratap-singh-11855333b/" target="_blank"><img src="./images/linkedin.png" alt="" height="30px"></a>
-            <a href="https://github.com/Atul-Pratap-Singh90" target="_blank"><img src="./images/github.png" alt="" height="30px"></a>
-            
-        
-        <p class="credit">Made with ❤️ by Atul</p>
-    </footer>
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-icon">📝</span>
+                        <span class="project-tag">HTML & CSS</span>
+                    </div>
+                    <h3>Blog Website</h3>
+                    <p>
+                        A stylish blog website layout created with HTML and CSS, featuring
+                        article cards, readable spacing, and a professional design system.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Atul-Pratap-Singh90" target="_blank" class="btn code-btn">Source Code</a>
+                        <a href="#" class="btn live-btn">Live Preview</a>
+                    </div>
+                </article> -->
+            </div>
+        </section>
 
+        <!-- ACHIEVEMENTS -->
+        <section class="section-card">
+            <div class="section-heading">
+                <p>Certificates</p>
+                <h2>🏆 Achievements</h2>
+            </div>
+
+            <div class="achievement-list">
+                <a class="achievement-card" href="https://www.geeksforgeeks.org/certificate/41bbf9aa0b004e57460da2bb986e228d" target="_blank">
+                    <span>✅</span>
+                    <div>
+                        <h3>Git Certificate</h3>
+                        <p>Issued by GeeksforGeeks</p>
+                    </div>
+                </a>
+
+                <a class="achievement-card" href="https://verify.letsupgrade.in/certificate/LUEHTMLJUL1252716" target="_blank">
+                    <span>✅</span>
+                    <div>
+                        <h3>HTML Certificate</h3>
+                        <p>Issued by LetsUpgrade</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- HOBBIES -->
+        <section class="section-card">
+            <div class="section-heading">
+                <p>Beyond Coding</p>
+                <h2>🎯 Hobbies</h2>
+            </div>
+            <ul class="hobbies">
+                <li>♟️ Playing Chess</li>
+                <li>🏔️ Adventure & Travel</li>
+            </ul>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <h2>Let's Connect</h2>
+            <p>Email: <a href="mailto:atulpratap7795@gmail.com">atulpratap7795@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919045720692">9045720692</a></p>
+            <p class="credit">Made with ❤️ by Atul</p>
+        </footer>
+    </main>
 </body>
 </html>
